@@ -4,3 +4,16 @@ version: 0.0.2
 api: [1.0.0]
 author: ZeroDevOfficial
 description: Allows Admins to tp between worlds with a simple UI in Nukkit
+
+#Working on permissions
+
+commands:
+  example:
+    description: Example command
+    usage: "/wtpui"
+    permission: exampleplugin.command.example
+    permission-message: "You do not have the required permission to run /wtpui"
+permissions:
+  exampleplugin.command.example:
+    description: "Allows the user to run the wtpui command"
+    default: true
